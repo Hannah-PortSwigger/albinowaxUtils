@@ -3,6 +3,9 @@ plugins {
     id 'maven-publish'
 }
 
+group = 'net.portswigger.albinowax'
+version = '1.4'
+
 sourceCompatibility = 21
 targetCompatibility = 21
 
