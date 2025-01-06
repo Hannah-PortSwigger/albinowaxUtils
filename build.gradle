@@ -48,9 +48,11 @@ publishing {
         maven {
             name = "GitHubPackages"
             url = "https://maven.pkg.github.com/Hannah-PortSwigger/albinowaxUtils"
-            credentials {
-                username = System.getenv("GH_ACTOR")
-                password = System.getenv("GH_TOKEN")
+            if (!System.getenv("GITHUB_ACTIONS")) {
+                credentials {
+                    username = System.getenv("GH_ACTOR")
+                    password = System.getenv("GH_TOKEN")
+                }
             }
         }
     }
