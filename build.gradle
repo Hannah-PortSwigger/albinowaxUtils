@@ -47,7 +47,7 @@ publishing {
     repositories {
         maven {
             name = "GitHubPackages"
-            url = "https://maven.pkg.github.com/Hannah-PortSwigger/albinowaxUtils"
+            url = "https://maven.pkg.github.com/hannah-portswigger/albinowaxutils"
             if (!System.getenv("GITHUB_ACTIONS")) {
                 credentials {
                     username = System.getenv("GH_ACTOR")
