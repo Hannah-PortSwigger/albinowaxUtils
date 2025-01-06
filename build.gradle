@@ -50,8 +50,8 @@ publishing {
             url = "https://maven.pkg.github.com/hannah-portswigger/albinowaxutils"
             if (!System.getenv("GITHUB_ACTIONS")) {
                 credentials {
-                    username = System.getenv("GH_ACTOR")
-                    password = System.getenv("GH_TOKEN")
+                    username = System.getenv("USERNAME")
+                    password = System.getenv("TOKEN")
                 }
             }
         }
